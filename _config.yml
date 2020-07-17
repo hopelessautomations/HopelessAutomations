@@ -1,0 +1,131 @@
+author: "Sthope"
+title: "Hopeless Automations"
+url-pretty: "Hopeless Automations"
+description: "Hopeless Automations adventures"
+url: "https://hopelessautomation.com"
+# baseurl: ""
+
+# Output options (more information on Jekyll's site)
+timezone: "Europe/Amsterdam"
+markdown: kramdown
+highlighter: rouge
+permalink: /:title
+title-separator: "-"
+date_format: "%B %-d, %Y"
+paginate: 5
+paginate_path: "/page:num/"
+round-avatar: true
+
+kramdown:
+  input: GFM
+
+disqus: "HopelessAutomations"
+link-tags: true
+excerpt_length: 50
+
+navbar-col: "#F5F5F5"
+navbar-text-col: "#404040"
+navbar-border-col: "#EAEAEA"
+page-col: "#FFFFFF"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#F5F5F5"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+
+collections:
+  smarthome:
+    output: true
+    permalink: /smarthome/:title
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+      readtime: true # add estimated reading time on all blog posts
+  - scope:
+      path: "" # all files
+    values:
+      layout: "page"
+      show-avatar: false
+# --- Sthope --- #
+  - scope:
+      path: ""
+      type: "smarthome"
+    values:
+      layout: "page"
+      comments: false
+
+# --- List of links in the navigation bar --- #
+navbar-links:
+  Smarthome: "smarthome/index"
+  Adventures: /adventures
+#    - Zemismart: "Zemismart_M515EGB"
+#    - Moes: "Moes"
+  About Me: "aboutme"
+
+social-network-links:
+  rss: false
+#   email: "admin@hopelessautomations.com"
+#   github: HopelessAutomations
+#   youtube: user/HuGhBrIaN
+#   facebook:
+#   twitter:
+#   instagram:
+#   spotify:
+#   reddit:
+#  linkedin: yourname
+#  xing: yourname
+#  stackoverflow: "3943160/yourname"
+#  snapchat:
+#  telephone: +14159998888
+#  steam: deanat78
+#  twitch: yourname
+#  yelp: yourname
+#  telegram: 
+#  calendly: yourname
+#  mastodon: instance.url/@username
+
+share-links-active:
+  twitter: true
+  facebook: true
+  linkedin: true
+  vk: false
+
+
+
+# Fill in your Google Analytics gtag.js ID to track your website using gtag
+gtag: "UA-172767144-1"
+
+# Fill in your Google Analytics ID to track your website using GA
+google_analytics: "UA-172767144-1"
+
+# Google Tag Manager ID
+#gtm: ""
+
+# To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
+
+# --- Misc --- #
+
+# Character used to separate site title and description in HTML document title
+# and RSS feed title
+
+# Ruby Date Format to show dates of posts
+
+
+# Exclude these files from production site
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
