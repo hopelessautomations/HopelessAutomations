@@ -14,8 +14,8 @@ thumbnail-img: /assets/img/zemismart_logo1.jpeg
 
 Let the battle for the best, cheaper and easier to integrate locally with Home Assistant begin!
 
-I have recently deciced to install smart curtains / blinds on a few of my many windows.  
-Especilly for the room where I have my parrots if the curtains can open and close automaticly at set times I can have the parrots quiet until the time is right, otherwise they start "living" when the sun rises.  
+I have recently decided to install smart curtains / blinds on a few of my many windows.  
+Especially for the room where I have my parrots if the curtains can open and close automatically at set times I can have the parrots quiet until the time is right, otherwise they start "living" when the sun rises.  
 
 Having looked around on my favorite online store (aliexpress) I saw there are plenty of choices right now but my choices are always go towards the ones I know alright it can be hacked (WiFi and Zigbee for me)  
 
@@ -27,20 +27,20 @@ The device wasn't yet added to [Supported Tasmota Devices](https://templates.bla
 
 ## Zemismart M515EGB the Updated Roller Shade Driver
 
-I was surprised the item arived to Europe under 2 weeks.
+I was surprised the item arrived to Europe under 2 weeks.
 Packaging looked great and solid and my only real complain about it (and from what I've experienced seems to be a brand problem) are the English manuals or the lack of them.  
 This one actually had a rough translation to English but some others I have bought.. let's just say I was happy they weren't my firsts and I already knew more or less how to operate them.  
 
 First thing after unboxing was clearly starting up tuya-converter and see if I could backup the stock firmware and also flash it OTA.  
-The poor English instructions only made it harder to understand how to pair the device with the USB wifi stick and the RF remote controller that came with it. But after that I could confirm on tuya-converter that OTA flashing was possible and without further thinking and decided to flash Tasmota on it.  
+The poor English instructions only made it harder to understand how to pair the device with the USB WiFi stick and the RF remote controller that came with it. But after that I could confirm on tuya-converter that OTA flashing was possible and without further thinking and decided to flash Tasmota on it.  
 
 After successfully flashing Tasmota and connect it to my network I opened up Tasmota console and setup Tuya MCU as module and configured the Web log level to More debug with <code>Backlog weblog 4; module 54</code> waited for it to reboot and for my surprise there weren't any Tuya messages showing up.
 
 As always I have put the "cart before the horse" only making it harder on myself, but OK.. It's not like it's the first time.. lol
 
-Having managed to open the USB WiFi stick fairly easy I decided to flash the stock firmware back and start from the begining debuging the original messages from the APP to the device itself.
+Having managed to open the USB WiFi stick fairly easy I decided to flash the stock firmware back and start from the beginning debugging the original messages from the APP to the device itself.
 
-After connecting to Tuya App I noticed my problem was how to connect the stick to the motor itself which toke awhile to figure out but having that done and connecting the esp8266 to my ftdi stick I saw the normal Tuya messages on the terminal.
+After connecting to Tuya App I noticed my problem was how to connect the stick to the motor itself which toke awhile to figure out but having that done and connecting the esp8266 to my FTDI stick I saw the normal Tuya messages on the terminal.
 
 Saved all the messages incase I needed later on and flashed Tasmota OTA again with tuya-converter leaving the usb stick paired with the device.  
 All that done I sended the same backlog command as before <code>Backlog weblog 4; module 54</code> and Tuya messages started floating on my console.  
@@ -107,4 +107,4 @@ cover:
     optimistic: true
 {% endhighlight %}
 
-Since the motor direction can be set using the RF controler remote and is basicly a one time configuration I didn't bother adding it to my Home Assistant and the battery (dpId 10) is part of notification system a story for another post.
+Since the motor direction can be set using the RF controller remote and is basically a one time configuration I didn't bother adding it to my Home Assistant and the battery (dpId 10) is part of notification system a story for another post.
