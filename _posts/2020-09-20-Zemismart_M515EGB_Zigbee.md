@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Zemismart M515EGB ZigBee
-subtitle: Zigbee Roller Shade Driver
+title: Zemismart M515EGB
+subtitle: Zigbee version
 tags: [Smarthome, Adventures, Tuya, Zemismart, Zigbee]
 share-img: /assets/img/zemismart_logo1.jpeg
 thumbnail-img: /assets/img/zemismart_logo1.jpeg
