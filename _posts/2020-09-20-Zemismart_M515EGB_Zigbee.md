@@ -15,11 +15,14 @@ thumbnail-img: /assets/img/zemismart_logo1.jpeg
 When I thought it was all over I see Zemismart released a newer 'version' of the wifi chain roller but with Zigbee instead.  
 Because I enjoyed the WiFi version and I still had 1 window to automate and already had regular blinds I decided to order.  
   
-### The case
+### Opening
 ![](/assets/img/zemismart_m515egb_zigbee/case.jpg)
 ![](/assets/img/zemismart_m515egb_zigbee/case_open.jpg)
 ![](/assets/img/zemismart_m515egb_zigbee/case_manual.jpg)
-  
+
+
+
+
 ### The back of the manual
 ![](/assets/img/zemismart_m515egb_zigbee/device_back.jpg)
   
